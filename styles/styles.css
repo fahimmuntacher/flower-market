@@ -79,6 +79,67 @@ body{
 #banner-title span{
     color: rgba(233, 90, 8, 1);
 }
+/* banner style finish */
+
+/* plants collection section  */
+.plants-collection{
+    margin-top: 120px;
+}
+.plants-heading-content{
+    text-align: center;
+}
+#plants-collection-title{
+    font-weight: bold;
+    font-size: 3.125rem;
+    margin-bottom: 10px;
+}
+#plants-collection-title span{
+    color: rgba(233, 90, 8, 1);
+}
+.plants-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 100px;
+    gap: 25px;
+}
+.card{
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.562);
+
+    
+}
+.card img{
+    width: 100%;
+}
+.card h3{
+    margin-top: 25px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.card h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+.cart-button button{
+ width: 100%;
+ padding: 20px; 
+ background-color: rgba(233, 90, 8, 1);
+ color: white;
+ font-weight: 700;  
+ font-size: 1rem;
+ border: none;
+ cursor: pointer;
+ border: 2px solid rgba(233, 90, 8, 1);
+ 
+}
+.cart-button button:hover{
+    background-color: white;
+    color: rgba(233, 90, 8, 1);
+}
+
 /* media query style start */
 
 /* mobile device */
@@ -86,7 +147,6 @@ body{
     .navbar{
         width: 90%;
         margin: 0 auto;
-        align-items: center;
     }
     .menubar ul{
         display: none;
@@ -95,12 +155,22 @@ body{
         flex-direction: column-reverse;
         margin-top: 50px;
     }
+    .brand-logo img{
+        width: 80px;
+        height: 50px;
+    }
     .banner-img img{
         width: 100%;
     }
     .banner-content{
         width: 90%;
-        text-align: center;
+        text-align: start;
         
+    }
+    .plants-cards{
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;
     }
 }
