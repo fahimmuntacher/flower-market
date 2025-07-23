@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Serif", serif;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    /* background: linear-gradient(0deg,rgb(209, 147, 196) 0%, rgba(255, 186, 186, 1) 1%, rgba(255, 255, 255, 1) 0%, rgba(255, 194, 194, 1) 100%, rgba(255, 255, 255, 1) 100%);
+    background-repeat: no-repeat; */
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+.menubar{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+#home-button a{
+    font-weight: bold;
+    color: black;
+}
+.menubar ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.125rem;
+    color: rgba(137, 135, 161, 1);
+}
+
+.cart-img{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cart-img img{
+    width: 30px;
+    height: 30px;
+}
