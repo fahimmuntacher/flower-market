@@ -9,6 +9,15 @@ body{
     /* background: linear-gradient(0deg,rgb(209, 147, 196) 0%, rgba(255, 186, 186, 1) 1%, rgba(255, 255, 255, 1) 0%, rgba(255, 194, 194, 1) 100%, rgba(255, 255, 255, 1) 100%);
     background-repeat: no-repeat; */
 }
+
+/* shared style start */
+    .paragraph{
+        font-size: 1.5rem;
+        color: rgba(0, 0, 0, 0.5);
+    }
+/* shared style done */
+
+/* navbar style start */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -30,6 +39,12 @@ body{
     font-size: 1.125rem;
     color: rgba(137, 135, 161, 1);
 }
+.menubar ul a:hover{
+    padding: 2px;
+    border-radius: 2px;
+    background-color: rgba(0, 255, 255, 0.212);
+
+}
 
 .cart-img{
     display: flex;
@@ -43,7 +58,27 @@ body{
 .cart-img p{
     font-size: 1.125rem;
 }
+/* navbar style done */
 
+
+/* banner style start */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+}
+.banner-content{
+    width: 50%;
+}
+#banner-title{
+    font-weight: bold;
+    font-size: 4.125rem;
+    margin-bottom: 20px;
+}
+#banner-title span{
+    color: rgba(233, 90, 8, 1);
+}
 /* media query style start */
 
 /* mobile device */
@@ -55,5 +90,16 @@ body{
     }
     .menubar ul{
         display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .banner-content{
+        width: 90%;
+        text-align: center;
     }
 }
