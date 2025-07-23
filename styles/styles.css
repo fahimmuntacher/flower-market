@@ -16,7 +16,16 @@ body{
         color: rgba(0, 0, 0, 0.5);
     }
 /* shared style done */
-
+/* animation style  */
+@keyframes pop-up {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* animation style end */
 /* navbar style start */
 .navbar{
     display: flex;
@@ -139,7 +148,33 @@ body{
     background-color: white;
     color: rgba(233, 90, 8, 1);
 }
-
+.plant-lover{
+    display: flex;
+    margin-top: 120px;
+    gap: 60px;
+    align-items: center;
+}
+.plant-lover-img{
+    position: relative;
+}
+#trusted-badge{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 400px;
+    bottom: 450px;
+    animation: pop-up 1.5s ease-out forwards infinite;
+    
+}
+.plant-lover-content h1{
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+.plant-lover-content li{
+    width: 90%;
+    margin-bottom: 20px;
+}
 /* media query style start */
 
 /* mobile device */
@@ -172,5 +207,21 @@ body{
         width: 90%;
         margin: 0 auto;
         margin-top: 50px;
+    }
+    .plant-lover{
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+    .plant-lover-img img{
+        width: 100%;
+        
+    }
+    .plant-lover-content{
+        width: 100%;
+    }
+    #trusted-badge{
+        display: none;
     }
 }
