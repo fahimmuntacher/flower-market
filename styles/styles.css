@@ -13,7 +13,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 .menubar{
     display: flex;
@@ -39,4 +39,21 @@ body{
 .cart-img img{
     width: 30px;
     height: 30px;
+}
+.cart-img p{
+    font-size: 1.125rem;
+}
+
+/* media query style start */
+
+/* mobile device */
+@media screen and (max-width: 576px) {
+    .navbar{
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .menubar ul{
+        display: none;
+    }
 }
