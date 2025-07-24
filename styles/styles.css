@@ -190,6 +190,83 @@ header{
     width: 100%;
     margin-bottom: 20px;
 }
+/* latest deal section style */
+.latest-deal{
+    max-width: 1440px;
+    margin: 100px auto 0 auto;
+}
+.deal-content{
+    text-align: center;
+}
+.deal-content h1{
+    font-weight: bold;
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+.deal-content h1 span{
+    color: rgba(233, 90, 8, 1);
+}
+
+.deals-offers{
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+.deals-offers button{
+    margin-top: 15px;
+    font-weight: bold;
+    color: white;
+    background: none;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 2px solid white;
+}
+.first-offer-list{
+    width: 35%;
+
+}
+.first-offer-list h2{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.second-offer h2{
+    font-size: 2.5rem;
+}
+.bloom-card{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url('../assets/deal-bloom.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 65px 50px;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+.ana-card{
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url('../assets/deal-ana.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 65px 50px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+.second-offer{
+    width: 65%;
+}
+.zabo-card{
+     background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url('../assets/deal-zabo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 168px 50px;
+    border-radius: 8px;
+}
 /* Join us  */
 
 .join-us {
@@ -332,8 +409,15 @@ header{
         width: 100%;
         margin: 0px;
     }
+    .join-us-content input{
+        width: 70%;
+    }
+
     .join-us-content h1{
         width: 100%;
+    }
+    .join-us-content button{
+        right: 30px;
     }
     .join-us{
         width: 100%;
@@ -354,5 +438,24 @@ header{
         width: 90%;
         margin: 30 auto;
     }
-
+    .deals-offers{
+        flex-direction: column;
+    }
+    .first-offer-list{
+        /* display: flex;
+        flex-direction: column; */
+        width: 90%;
+        margin: 0 auto;
+    }
+    .second-offer{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .zabo-card{
+        padding: 65px 50px;
+        
+    }
+    .zabo-card h2{
+        font-size: 1.25rem;
+    }
 }
