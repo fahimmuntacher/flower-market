@@ -182,7 +182,9 @@ header{
     left: 400px;
     bottom: 480px;
     animation: pop-up 1.5s ease-out forwards infinite;
-    
+}
+#trusted-badge img{
+    box-shadow: 15px 0px 50px black;
 }
 .plant-lover-content h1{
     font-weight: bold;
