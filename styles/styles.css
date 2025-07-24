@@ -4,9 +4,12 @@
     font-family: "Noto Serif", serif;
 }
 body{
-    
-    /* background: linear-gradient(0deg,rgb(209, 147, 196) 0%, rgba(255, 186, 186, 1) 1%, rgba(255, 255, 255, 1) 0%, rgba(255, 194, 194, 1) 100%, rgba(255, 255, 255, 1) 100%);
-    background-repeat: no-repeat; */
+      background: linear-gradient(
+    to bottom,
+    #fff5f8 0%,
+    #ffe6ec 50%,
+    #ffd6e6 100% 
+  );
 }
 
 /* shared style start */
