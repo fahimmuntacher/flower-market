@@ -36,6 +36,9 @@ header{
     align-items: center;
     padding-top: 40px;
 }
+.cart-img{
+    cursor: pointer;
+}
 .menubar{
     display: flex;
     align-items: center;
@@ -45,16 +48,15 @@ header{
     font-weight: bold;
     color: black;
 }
-.menubar ul a{
+.menubar ul a, .footer-menubar ul a, .site-footer-nav ul a{
     text-decoration: none;
     color: black;
     font-size: 1.125rem;
     color: rgba(137, 135, 161, 1);
 }
-.menubar ul a:hover{
-    padding: 2px;
-    border-radius: 2px;
-    background-color: rgba(0, 255, 255, 0.212);
+.menubar ul a:hover, .footer-menubar ul a:hover, .site-footer-nav ul a:hover {
+    color: rgba(233, 90, 8, 1);
+    font-weight: bold;
 
 }
 
@@ -237,11 +239,40 @@ header{
   border-left: 2px solid rgba(233, 90, 8, 1);
   /* border: 1px solid rgba(233, 90, 8, 1); */
 }
-
 .join-us-content button:hover {
   background-color: white;
   color: rgba(233, 90, 8, 1);
 }
+
+/* footer section  */
+
+.footer-cotent{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    align-items: flex-start;
+    margin: 50px auto;
+
+}
+.brand-intro p{
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.footer-menubar ul, .site-footer-nav ul{
+    margin-bottom: 30px;
+}
+
+.social-links{
+    display: flex;
+    gap: 30px;
+}
+.social-links img{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
 
 
 /* media query style start */
@@ -314,6 +345,11 @@ header{
     .join-us-content button{
         right: 60px;
         
+    }
+    .footer-cotent{
+        flex-direction: column;
+        width: 90%;
+        margin: 30 auto;
     }
 
 }
