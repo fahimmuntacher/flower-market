@@ -191,16 +191,21 @@ header{
   background-image: url(../assets/news-letter-bg.png);
   background-size: cover;
   height: auto;
-  align-items: center;
+  /* align-items: center; */
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 100px 20px;
+  padding: 12.5rem 0px;
   margin-top: 100px;  
   color: white;
   position: relative;
+  width: 100%;
 }
-
+.join-us-content{
+    width: 90%;
+    margin: 0 auto;
+    /* padding-top: 150px; */
+}
 .join-us-content h1 {
   font-size: 3.125rem;
   font-weight: bold;
@@ -291,7 +296,6 @@ header{
 
     .join-us-content{
         width: 100%;
-        border: 2px solid tomato;
         margin: 0px;
     }
     .join-us-content h1{
@@ -300,13 +304,15 @@ header{
     .join-us{
         width: 100%;
         background-size: cover;
+        /* padding-left: 0px;
+        padding-right: 0px; */
     }
     .join-us-content input{
         width: 50%;
     }
 
     .join-us-content button{
-        right: 80px;
+        right: 60px;
         
     }
 
