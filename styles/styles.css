@@ -175,8 +175,9 @@ header{
     width: 250px;
     height: 250px;
     position: absolute;
+    /* position: relative; */
     left: 400px;
-    bottom: 450px;
+    bottom: 480px;
     animation: pop-up 1.5s ease-out forwards infinite;
     
 }
@@ -219,6 +220,10 @@ header{
     font-size: 1.5rem;
     border: none;
     border-bottom: 2px solid white;
+    cursor: pointer;
+}
+.deals-offers button:hover{
+    color: rgb(252, 186, 149);
 }
 .first-offer-list{
     width: 35%;
@@ -279,11 +284,11 @@ header{
   padding: 12.5rem 0px;
   margin-top: 100px;  
   color: white;
-  position: relative;
+  /* position: relative; */
   width: 100%;
 }
 .join-us-content{
-    width: 90%;
+    max-width: 1440px;
     margin: 0 auto;
     /* padding-top: 150px; */
 }
@@ -299,8 +304,8 @@ header{
   border: none;
   outline: none;
   font-size: 1rem;
-  width: 650px;
-  max-width: 100%;
+  width: 50%;
+  /* position: relative; */
   border-radius: 4px 0 0 4px;
 }
 
@@ -313,8 +318,8 @@ header{
   font-size: 1rem;
   cursor: pointer;
   border-radius: 0 4px 4px 0;
-  position: absolute;
-  right: 600px;
+  position: relative;
+  right: 15px;
   border-left: 2px solid rgba(233, 90, 8, 1);
   /* border: 1px solid rgba(233, 90, 8, 1); */
 }
@@ -332,6 +337,9 @@ header{
     align-items: flex-start;
     margin: 50px auto;
 
+}
+.brand-intro{
+    width: 25%;
 }
 .brand-intro p{
     margin-top: 20px;
@@ -403,40 +411,6 @@ header{
     #trusted-badge{
         display: none;
     }
-
-    .join-us-content{
-        width: 100%;
-        margin: 0px;
-    }
-    .join-us-content input{
-        width: 70%;
-    }
-
-    .join-us-content h1{
-        width: 100%;
-    }
-    .join-us-content button{
-        right: 30px;
-    }
-    .join-us{
-        width: 100%;
-        background-size: cover;
-        /* padding-left: 0px;
-        padding-right: 0px; */
-    }
-    .join-us-content input{
-        width: 50%;
-    }
-
-    .join-us-content button{
-        right: 60px;
-        
-    }
-    .footer-cotent{
-        flex-direction: column;
-        width: 90%;
-        margin: 30 auto;
-    }
     .deals-offers{
         flex-direction: column;
     }
@@ -457,4 +431,36 @@ header{
     .zabo-card h2{
         font-size: 1.25rem;
     }
+    .join-us-content{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .join-us-content input{
+        width: 70%;
+        margin: auto;
+    }
+
+    .join-us-content h1{
+        width: 100%;
+    
+    }
+    .join-us{
+        width: 100%;
+        background-size: cover;
+        /* padding-left: 0px;
+        padding-right: 0px; */
+    }
+    .join-us-content input{
+        width: 40%;
+    }
+    .footer-cotent{
+        flex-direction: column;
+        width: 90%;
+        margin: 30 auto;
+    }
+    .brand-intro{
+    width: 100%;
+    }
+    
+
 }
